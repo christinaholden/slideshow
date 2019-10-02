@@ -1,0 +1,51 @@
+/* photos.json
+ * Photo reference file for slideshow.html.
+ * Author: Christina Holden
+ * June 2017 */
+
+// Json Array for image and caption data
+var slides =
+[
+    {"image"   : "./photos/IMG_01.jpg",
+     "caption" : "Grizzly Bear (Ursus arctos horribilis)"},
+    {"image"   : "./photos/IMG_02.jpg",
+     "caption" : "Gray Fox (Urocyon cinereoargenteus)"},
+    {"image"   : "./photos/IMG_03.jpg",
+     "caption" : "Bison (Bison bison)"},
+    {"image"   : "./photos/IMG_04.jpg",
+     "caption" : "Barred Owl (Strix Varia)"},
+    {"image"   : "./photos/IMG_05.jpg",
+     "caption" : "Indian Peafowl (Pavo cristatus)"},
+    {"image"   : "./photos/IMG_06.jpg",
+     "caption" : "Home Hardware Corral Petting Zoo"},
+    {"image"   : "./photos/IMG_07.jpg",
+     "caption" : "Bactrian Camel (Camelus bactrianus)"},
+    {"image"   : "./photos/IMG_08.jpg",
+     "caption" : "Llama (Lama glama)"},
+    {"image"   : "./photos/IMG_09.jpg",
+     "caption" : "Pot Bellied Pig (Sus scrofa domestica)"},
+    {"image"   : "./photos/IMG_10.jpg",
+     "caption" : "Miniature Donkey (Equus africanus asinus)"},
+    {"image"   : "./photos/IMG_11.jpg",
+     "caption" : "Elk (Cervus elaphus)"},
+    {"image"   : "./photos/IMG_13.jpg",
+     "caption" : "Mountain Goat (Oreamnos americanus)"},
+    {"image"   : "./photos/IMG_14.jpg",
+     "caption" : "Dipper Falls Trail"},
+    {"image"   : "./photos/IMG_15.jpg",
+     "caption" : "Dipper Falls Trail"},
+    {"image"   : "./photos/IMG_16.jpg",
+     "caption" : "Dipper Falls"},
+    {"image"   : "./photos/IMG_17.jpg",
+     "caption" : "American Badger (Taxidea taxus)"},
+    {"image"   : "./photos/IMG_18.jpg",
+     "caption" : "Arctic Wolf (Canis lupus hudsonicus)"},
+    {"image"   : "./photos/IMG_20.jpg",
+     "caption" : "Moose Compound"},
+    {"image"   : "./photos/IMG_21.jpg",
+     "caption" : "Moose (Alces alces)"},
+    {"image"   : "./photos/IMG_22.jpg",
+     "caption" : "Couger (Felis concolor)"},
+    {"image"   : "./photos/IMG_23.jpg",
+     "caption" : "Albino Python from Safari Jeff's Reptile Show"}
+];

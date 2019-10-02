@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>British Columbia Wildlife Park Slideshow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/slideshow.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Basic" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/scripts.js" defer></script>
+    <script type="text/javascript" src="scripts/photos.json" defer></script>
+
+</head>
+
+<body>
+    <section id="page1">
+        <header >
+            <img id="landing" src="images/slideshow_landing.jpg" alt="Albino Boa">
+            <h1>Kamloops Wildlife <br>
+                Park Slideshow</h1>
+        </header>
+        <div>
+            <a  id="take-the-tour" href="#page2">Take the Tour</a>
+        </div>
+    </section>
+    <section id="page2">
+        <div id="slideshow-wrapper">
+            <canvas id="slideshow" width="640" height="500"></canvas>
+            <div class="control-panel">
+                <button id="control" class="fa fa-play" aria-label="play/pause"></button>
+                <span></span>
+                <button id="previous" class="fa fa-backward" aria-label="previous"></button>
+                <span id="sequence"></span>
+                <button id="next" class="fa fa-forward" aria-label="next"></button>
+                <span></span>
+                <button id="options" class="fa fa-cog"  aria-label="options"></button>
+
+            </div>
+            <div id="dropdown" class="control-panel hidden">
+                <button id="toggle_sequence">Sequential</button>
+                <button id="snap">Effect: Switch</button>
+                <button id="fade">Effect: Fade</button>
+                <button id="slide">Effect: Slide</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#page1" id="back-to-top">Back to the Top</a>
+    </footer>
+
+</body>
+
+</html>

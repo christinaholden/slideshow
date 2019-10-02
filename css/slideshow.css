@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* tut_styles.css
+ * CSS styling for Web Development Tutorials site
+ * Author: Christine Holden
+ * June 2017
+ */
+
+
+/* Maintains element size when adding borders
+------------------------------*/
+*,*:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* General formatting
+------------------------------*/
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 100%;
+    line-height: 1.3em;
+
+}
+a:link, a:visited{
+    text-decoration:none;
+}
+a:hover, a:active, a:focus{
+    text-decoration: underline;
+}
+
+
+/* Page one (landing) styles
+------------------------------*/
+#page1 {
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+}
+#landing {
+    height:100vh;
+}
+h1{
+    position: absolute;
+    top: 2%;
+    left: 20px;
+    font-size: 1.7em;
+    line-height: 1.1em;
+    font-family:'Basic', sans-serif;
+    color: #E9AB17;
+    text-shadow: .05em .05em .05em #000;
+}
+#take-the-tour {
+    color: #000;
+    background-color: #E9AB17;
+    position: relative;
+    font-size: 1em;
+    top: -50px;
+    left: 20px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+
+/* Page 2 (slideshow) styles
+------------------------------*/
+#page2 {
+    background-color: #000;
+    height: 93vh;
+}
+#slideshow {
+    width: 100%;
+    max-width: 768px;
+    border: solid 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#slideshow-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.control-panel {
+    width: 100%;
+    max-width: 768px;
+    background-color: #000;
+    display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    margin: auto;
+
+}
+.control-panel button, #control-panel span{
+-webkit-flex-grow: 1 ;
+            -ms-flex-grow: 1 ;
+                flex-grow: 1 ;
+    color: white;
+    background-color: #000;
+    border: none;
+    width: 14.28%;
+
+}
+.control-panel span {
+    font-size: .8em;
+    text-align: center;
+
+}
+#sequence {
+    color: white;
+}
+
+
+/* Dropdown menu styles
+------------------------------*/
+#dropdown {
+    margin-top: 10px;
+    max-width: 748px;
+}
+.hidden {
+    display: none;
+}
+#dropdown button{
+    padding: 5px;
+    font-size: .7em;
+    border: solid 1px white;
+}
+
+
+/* Footer styles
+------------------------------*/
+#back-to-top {
+    display: block;
+    font-size: 1em;
+    color: #000;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+footer {
+    text-align: center;
+    height: 7vh;
+}
+
+
+/* Media queries
+------------------------------*/
+@media screen and (min-width: 480px) {
+    #landing {
+        height:120vh;
+    }
+}
+@media screen and (min-width: 600px) {
+    #landing {
+        height:100vh;
+    }
+    h1{
+        font-size: 3em;
+
+    }
+    #take-the-tour {
+        top: -50px;
+        font-size: 1.5em;
+    }
+    #back-to-top {
+        font-size: 1.5em;
+    }
+    #dropdown button{
+    font-size: .9em;
+    }
+}
+@media screen and (min-width: 1000px) {
+
+    h1{
+        font-size: 4.5em;
+        left: 50px;
+        top: 50px;
+    }
+    #take-the-tour {
+        top: -70px;
+        left:50px;
+        font-size: 2.3em;
+    }
+    #back-to-top {
+        font-size: 2em;
+    }
+}
+@media screen and (min-width: 1400px) {
+
+    #landing {
+        height: 130vh;
+    }
+    #take-the-tour {
+        top: -400px;
+    }
+}
+@media only screen and (orientation: landscape) and (max-width: 800px) {
+    #landing {
+        height:120vh;
+    }
+    #take-the-tour {
+        top: -130px;
+    }
+    #slideshow {
+        width: 60%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
